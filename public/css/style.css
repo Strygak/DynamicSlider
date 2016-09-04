@@ -1,11 +1,11 @@
 body {
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .slider {
-	position: relative;
-	display: inline-block;
-	width: 200px;
-	height: 120px;
-	background-color: #ff5722;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 120px;
+    background-color: #ff5722;
 }
