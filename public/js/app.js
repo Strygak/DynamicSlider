@@ -8,7 +8,7 @@ function createColor() {
 }
 
 function getRandom() {
-    var width = $(window).width() - 200;
+    var width = $(window).width() - 210;
     socket.emit("getRandom", { number: width });
 }
 
