@@ -8,14 +8,14 @@ function createColor() {
 }
 
 function getRandom() {
-    var width = $(window).width() - 210;
-    socket.emit("getRandom", { number: width });
+	var width = $(window).width() - 210;
+	socket.emit("getRandom", { number: width });
 }
 
-setInterval( function() { getRandom() }, 2000);
+setInterval(function() { getRandom() }, 2000);
 
 socket.on("send", function(data) {
-    $("div.slider").css("background-color", createColor()).animate({
-        left: data.num
-    });
+	$("div.slider").css("background-color", createColor()).animate({
+		left: data.num
+	});
 });
